@@ -3,80 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Backend Java Developer</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #111;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            color: #ffc107;
+        }
+        header p {
+            margin: 10px 0;
+            font-size: 1.2rem;
+            color: #f0f0f0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px 0;
+            background-color: #222;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: #ffc107;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 5px 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #ffc107;
+        }
+        .about p, .skills ul li, .projects .project p, .experience .job p {
+            color: #f0f0f0;
+        }
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+        .skills ul li {
+            background-color: #333;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+        .projects .project, .experience .job {
+            background-color: #222;
+            border: 1px solid #444;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .projects .project h3, .experience .job h3 {
+            margin: 0 0 10px;
+            color: #ffc107;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact form input, .contact form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #555;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+        }
+        .contact form button {
+            background-color: #ffc107;
+            color: #000;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact form button:hover {
+            background-color: #e0a800;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #111;
+            color: #777;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="hero">
-        <div class="hero-text">
-            <h1>Welcome to My Portfolio</h1>
-            <p>I am a passionate Backend Java Developer exploring System Design</p>
-        </div>
-    </section>
+<header>
+    <h1>Hello, I'm Kavitha S<h1>
+    <p>Passionate about building scalable backend systems and learning system design.</p>
+</header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a backend Java developer with experience in building scalable applications and APIs. Recently, I have been diving deep into system design to enhance my skills in creating robust and efficient systems.</p>
-    </section>
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project Management Tool</h3>
-            <p>A web-based tool for managing projects, tasks, and team collaboration. Built using Java Spring Boot and PostgreSQL.</p>
-        </div>
-        <div class="project">
-            <h3>E-commerce Backend</h3>
-            <p>Developed a backend for an e-commerce platform, handling inventory management, payment processing, and order tracking.</p>
-        </div>
-        <div class="project">
-            <h3>System Design Notes</h3>
-            <p>Documented system design patterns and architectural solutions, including load balancers, caching strategies, and database sharding.</p>
-        </div>
-    </section>
+<section id="home">
+    <h2>Welcome</h2>
+    <p>Welcome to my portfolio! As a dedicated backend Java developer, I specialize in crafting robust, scalable, and efficient server-side solutions. With a passion for clean code and system design, I thrive on solving complex challenges and delivering impactful results.Here, you'll find highlights of my work, including projects showcasing my expertise in Java, Spring Boot, and database management. You'll also discover my commitment to continuous learning, as I delve deeper into system design principles to architect cutting-edge solutions.</p>
+</section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Java, Spring Boot</li>
-            <li>RESTful APIs, Microservices</li>
-            <li>SQL (PostgreSQL, MySQL)</li>
-            <li>Version Control (Git)</li>
-            <li>System Design (Load Balancing, Caching, Scalability)</li>
-        </ul>
-    </section>
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+        I am a passionate backend Java developer with a strong focus on building reliable, scalable, and efficient server-side applications.  
+        I specialize in creating clean, maintainable code and designing robust APIs for seamless system integration.  
+        With expertise in Java and Spring Boot, I have experience in implementing RESTful web services and managing databases effectively.  
+        My goal is to ensure performance and scalability while adhering to best practices in software development.  
+        Currently, I am expanding my knowledge by delving into system design principles to build even more resilient architectures.  
+        I enjoy solving complex problems and optimizing backend systems to meet high-demand requirements.  
+        Collaboration is at the core of my work, and I thrive in cross-functional teams to deliver impactful solutions.  
+        Continuous learning and staying updated with emerging technologies are my priorities as I strive for excellence in backend development.  </p>
+</section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+<section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>Java (Core and Advanced)</li>
+        <li>Spring Boot</li>
+        <li>RESTful API Development</li>
+        <li>Database Management (MySQL, MongoDB)</li>
+        <li>System Design Fundamentals</li>
+        <li>Git and Version Control</li>
+    </ul>
+</section>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+<section id="experience" class="experience">
+    <h2>Experience</h2>
+    <div class="job">
+        <h3>Java Developer - HEPL</h3>
+        <p>Developed and maintained backend services using Java and Spring Boot, ensuring high performance and scalability.</p>
+        <p>Collaborated with cross-functional teams to design and implement RESTful APIs and database schemas.</p>
+        <p>Duration: Sep 2024 - Present</p>
+    </div>
+</section>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+<section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project">
+        <h3> Hotel Reservation Management System</h3>
+        <p>The Hotel Reservation Management System is a Java-based application designed to streamline hotel booking processes. Built with core Java and MySQL, it enables users to efficiently manage room reservations, cancellations, and customer details. The system provides functionality for checking room availability, booking accommodations, and storing customer information securely in a MySQL database. It includes role-based access for administrators to manage room inventory, view booking records, and generate reports. The application ensures reliable data handling and supports scalability, making it an ideal solution for automating hotel operations and enhancing customer satisfaction.</p>
+    </div>
+</section>
 
-            <button type="submit">Send</button>
-        </form>
-    </section>
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form action="" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
 
-    <footer>
-        <p>&copy; 2024 My Portfolio</p>
-    </footer>
+<footer>
+    <p>&copy; 2024 Backend Java Developer Portfolio</p>
+</footer>
 
-    <script src="scripts.js"></script>
 </body>
 </html>
